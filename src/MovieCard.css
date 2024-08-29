@@ -1,0 +1,42 @@
+.MovieCard {
+    position: initial;
+    width: 250px; 
+    margin-right: auto;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .movie-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .movie-info {
+    position: relative;
+  }
+  
+  .additional-info {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP_H5E9eMF9rJwAySHKO2MihS3oNsss4ZJSnMjxskArgv8Ie4gnz19lnmWNw&s);
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(229, 51, 51, 0.1);
+    z-index: 1;
+    border-radius: 30px;
+    box-sizing: 200px;
+    
+  }
+  .additional-info img {
+    margin-bottom: 10px;
+  }
+  
+  .movie-info:hover .additional-info {
+    display: block;
+  }
+  
+  .additional-info {
+    transition: display 0.3s ease;
+  }
+  
+  
